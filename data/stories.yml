@@ -16,6 +16,11 @@ stories:
   - intent: email
   - action: utter_email
   - action: utter_them_thong_tin
+  - intent: có
+  - action: utter_khoa_CNTT
+  - action: utter_khoa_CNTT2
+  - intent: không
+  - action: utter_tam_biet
 
 
 - story: A 2

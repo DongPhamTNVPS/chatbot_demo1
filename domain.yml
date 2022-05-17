@@ -17,6 +17,8 @@ intents:
 #button 1.1.1
   - email
   - sdt
+  - có
+  - không
 responses:
   utter_chao_hoi:
   - text: "Bạn muốn tôi giúp đỡ gì không ạ?"
@@ -76,6 +78,7 @@ responses:
       payload: /có
     - title: Không
       payload: /không
+
 actions:
 - utter_chao_hoi
 - utter_tam_biet
