@@ -1,0 +1,98 @@
+version: "3.1"
+#Thông tin về khoa------------
+intents:
+  - chào hỏi
+  - tạm biệt
+#button 1
+  - thông tin về khoa 
+  - khoa công nghệ thông tin #1.1
+  - khoa kinh tế #1.2
+  - no_khoa #1.3
+#button 1.1
+  - đội ngũ giảng viên  #1.1.1
+  - văn phòng đoàn khoa #1.1.2
+  - lịch sử phát triển khoa #1.1.3
+  - văn phòng khoa #1.1.4
+  - giáo vụ #1.1.5
+#button 1.1.1
+  - email
+  - sdt
+responses:
+  utter_chao_hoi:
+  - text: "Bạn muốn tôi giúp đỡ gì không ạ?"
+
+
+  utter_tam_biet:
+  - text: "Bye"
+
+#thông tin về khoa
+#button 1
+  utter_thong_tin_ve_khoa:
+  - text: "Bạn có thể lựa chọn 1 số khoa cụ thể để biết thêm thông tin:"
+    buttons:
+    - title: Khoa công nghệ thông tin  #button 1.1
+      payload: /khoa công nghệ thông tin
+    - title: Khoa kinh tế
+      payload: /khoa kinh tế #button 1.2
+    - title: Khoa khác #button 1.3
+      payload: /no_khoa
+
+#button 1.1
+  utter_khoa_CNTT:
+  - text: "Vui lòng chọn 1 thông tin cụ thể:"
+    buttons:
+    - title: Đội ngũ giảng viên  #button 1.1.1
+      payload: /đội ngũ giảng viên
+    - title: Văn Phòng đoàn Khoa
+      payload: /văn phòng đoàn khoa #button 1.1.2
+    - title: Lịch sử phát triển khoa #button 1.1.3
+      payload: /lịch sử phát triển khoa
+  utter_khoa_CNTT2:
+  - text: "Vui lòng chọn 1 thông tin cụ thể:"
+    buttons:
+    - title: Văn Phòng khoa #button 1.1.4
+      payload: /văn phòng khoa
+    - title: Giáo vụ #button 1.1.5
+      payload: /giáo vụ
+  utter_doi_ngu_giang_vien:
+  - text: "Tôi có thể cung cấp cho bạn thông tin gì ạ>?"
+    buttons:
+    - title: Email
+      payload: /email
+    - title: Số điện thoại
+      payload: /sdt
+
+
+  utter_email: 
+  - text: "bạn có thể truy cập link để xem email giáo viên mà bạn cần:http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien"
+
+  utter_sdt: 
+  - text: "bạn có thể truy cập link để xem sdt giáo viên mà bạn cần:http://fit.iuh.edu.vn/giangvien.html@185@Doi-ngu-giang-vien"
+
+  utter_them_thong_tin:
+  - text: "bạn có cần hỏi thêm thông tin gì về khoa công nghệ thông tin nữa không ạ<>"
+    buttons:
+    - title: Có
+      payload: /có
+    - title: Không
+      payload: /không
+actions:
+- utter_chao_hoi
+- utter_tam_biet
+- utter_thong_tin_ve_khoa #button 1
+- utter_khoa_CNTT #button 1.1
+- utter_khoa_CNTT2
+- utter_doi_ngu_giang_vien
+- utter_email
+- utter_sdt
+- utter_them_thong_tin
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+
+
+

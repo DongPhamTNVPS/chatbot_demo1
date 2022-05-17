@@ -1,0 +1,84 @@
+version: "3.1"
+#câu hỏi thường gặp
+nlu:
+- intent: chào hỏi
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: tạm biệt
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+#Thông tin về khoa
+- intent: thông tin về khoa
+  examples: |
+    - thông tin về khoa
+
+- intent: khoa công nghệ thông tin #button1.1
+  examples: |
+    - khoa công nghệ thông tin
+
+- intent: khoa kinh tế #buuton 1.2
+  examples: |
+    - khoa kinh tế
+
+- intent: no_khoa #button 1.3
+  examples: |
+    - khoa khác 
+
+#button 1.1
+- intent: đội ngũ giảng viên #button 1.1.1
+  examples: |
+    - đội ngũ giảng viên 
+
+- intent: văn phòng đoàn khoa #button 1.1.2
+  examples: |
+    - văn phòng đoàn khoa
+- intent: lịch sử phát triển khoa #button 1.1.3
+  examples: |
+    - lịch sử phát triển khoa
+
+- intent: văn phòng khoa #button 1.1.4
+  examples: |
+    - văn phòng khoa
+
+- intent: giáo vụ #button 1.1.5
+  examples: |
+    - giáo vụ
+
+- intent: email
+  examples: |
+    - email
+
+- intent: sdt
+  examples: |
+    - số điện thoại
+- intent: có
+  examples: |
+    - Có
+
+- intent: không
+  examples: |
+    - Không
