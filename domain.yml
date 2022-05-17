@@ -97,5 +97,5 @@ session_config:
 
 
 
-
+#rasa run --endpoints endpoints.yml --credentials credentials.yml
 

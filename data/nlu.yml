@@ -51,7 +51,7 @@ nlu:
 #button 1.1
 - intent: đội ngũ giảng viên #button 1.1.1
   examples: |
-    - đội ngũ giảng viên 
+    - Đội ngũ giảng viên 
 
 - intent: văn phòng đoàn khoa #button 1.1.2
   examples: |
